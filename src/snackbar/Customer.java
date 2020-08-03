@@ -1,4 +1,4 @@
-package snackbar;// package package
+package snackbar;// package
 
 public class Customer{// create a class with the same name as file
   //declare maxId that will allow us to create a new id for every new customer
