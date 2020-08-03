@@ -65,7 +65,7 @@ Customer has methods (so can)
 * get cash on hand
 * buy snacks. Given the total cost of the snacks to be purchased, reduce the cash on hand by that amount
 
-### MPV
+### MVP
 
 The MVP of this application would produce the following output
 
@@ -74,7 +74,7 @@ Customer 1 cash on hand 37.75
 Quantity of snack 4 is 21
 
 Customer 1 cash on hand 35.75
-Quanity of snack 3 is 29
+Quantity of snack 3 is 29
 
 Customer 2 cash on hand 28.14
 Quantity of snack 4 is 19
@@ -99,7 +99,7 @@ Customer 1 cash on hand $37.75
 Quantity of snack 4 is 21
 
 Customer 1 cash on hand $35.75
-Quanity of snack 3 is 29
+Quantity of snack 3 is 29
 
 Customer 2 cash on hand $28.14
 Quantity of snack 4 is 19
