@@ -58,7 +58,7 @@ public class Snack{
   }
 
   //method to buy snack
-  public void buyAmount(int amountToBuy){
+  public void removeFromQuantity(int amountToBuy){
     this.quantity = quantity - amountToBuy;
   }
   
