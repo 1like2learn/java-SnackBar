@@ -1,8 +1,14 @@
 package snackbar;
 //define the package that the main java file is in
 
+import java.text.DecimalFormat;
+//import class that will help with formatting prices
+
 public class Main{
   //every class has a file and the name of the file and class should be the same
+
+  // creates a new decimal format that we can use on prices
+  private static DecimalFormat df = new DecimalFormat("$#,##0.00");
 
   public static void executeProgram () {
 
@@ -34,7 +40,7 @@ public class Main{
     //customer.addCash(double amountToAdd)
     System.out.println();
     jane.addCash(10);
-    System.out.println("Customer " + jane.getId() + " cash on hand $" + jane.getCash());
+    System.out.println("Customer " + jane.getId() + " cash on hand $" + df.format(jane.getCash()));
 
     buyItem(jane, chocBar, 1);
 
@@ -65,7 +71,7 @@ public class Main{
     System.out.println();
     snack.removeFromQuantity(quantity);
     customer.buySnacks(snack.priceOfAmountToBuy(quantity));
-    System.out.println("Customer " + customer.getId() + " cash on hand $" + customer.getCash());
+    System.out.println("Customer " + customer.getId() + " cash on hand " + df.format(customer.getCash()));
     System.out.println("Quantity of snack " + snack.getId() + " is " + snack.getQuantity());
   }
   public static void displaySnack(Snack snack, VendingMachine vendingMachine){
@@ -73,7 +79,7 @@ public class Main{
     System.out.println("Snack: " + snack.getName());
     System.out.println("Vending Machine: " + vendingMachine.getName());
     System.out.println("Quantity: " + snack.getQuantity());
-    System.out.println("Total Cost: " + snack.getCost() * snack.getQuantity());
+    System.out.println("Total Cost: " + df.format(snack.getCost() * snack.getQuantity()));
   }
 
   
